@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 50px;
+        background-color: #e8f4f8;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      p {
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
+        molestias, odit, tempora enim voluptatibus ullam nihil ea vel possimus
+        debitis tempore dignissimos sit unde omnis modi. Delectus, qui
+        asperiores libero!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, rerum
+        consequatur iste veritatis dolorem molestias rem at id inventore culpa
+        eum iusto eveniet vitae corporis fugiat quidem hic veniam dolorum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, ullam,
+        aperiam, soluta ab quibusdam doloremque quas dolorem temporibus nesciunt
+        vero delectus consequatur saepe sit illum ut corporis dolores! Commodi,
+        ipsum!
+      </p>
+    </div>
+
+    <div id="dialogo">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+        temporibus, tempore, ad, expedita cum adipisci commodi laborum nemo
+        optio quibusdam enim nam repellendus recusandae velit nihil nobis quis
+        rerum iste!
+      </p>
+    </div>
+
+    <script>
+      var x;
+      x = $(document);
+      x.ready(iniciar);
+
+      function iniciar() {
+        var x = $("#dialogo");
+        x.dialog();
+      }
+    </script>
+  </body>
+</html>
